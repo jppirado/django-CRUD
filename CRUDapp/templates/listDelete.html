@@ -1,0 +1,10 @@
+<h1> Itens Deletados </h1>
+{%for  dbs in db %}
+  <tr>
+    <td>{{dbs.id}}</td>
+    <td>{{dbs.name_product}} </td>
+    <td>{{dbs.value_product}}</td>
+    <td>{{dbs.invetory_product}}</td>
+  </tr> 
+  <br>
+{%endfor%}

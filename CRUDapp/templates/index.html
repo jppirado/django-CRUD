@@ -1,0 +1,20 @@
+
+<h1> Lista de Produtos</h1>
+{%for  dbs in db %}
+  <tr>
+    <td>{{dbs.id}}</td>
+    <td>{{dbs.name_product}} </td>
+    <td>{{dbs.value_product}}</td>
+    <td>{{dbs.invetory_product}}</td>
+    <td>
+      <a href="edit/{{dbs.id}}">editar</a>
+    </td>
+    <td>
+      <a href="dethalis/{{dbs.id}}" >visualizar</a>
+    </td>
+    <td>
+      <a href="delete/{{dbs.id}}" >deletar</a>
+    </td>
+  </tr> 
+  <br>
+{%endfor%}

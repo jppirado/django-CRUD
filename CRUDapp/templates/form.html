@@ -1,0 +1,20 @@
+<form id='form' name='form' 
+         action="{%if db%}/update/{{db.id}}/{%else%}/create/{%endif%}"  
+         method='post'>
+   {% csrf_token %}
+   <div class="">
+      Nome Produto
+      {{form.name_product}} <br>
+   </div>
+   <div class="">
+      Valor  Unitario 
+      {{form.value_product}} <br>
+   </div>
+   <div class="">
+      Quantidade Pd
+      {{form.invetory_product}}
+   </div>
+   <input type="submit" value = "Cadastrar Produto">
+</form>   
+
+ 
